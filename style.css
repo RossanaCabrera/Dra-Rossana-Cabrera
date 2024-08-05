@@ -129,7 +129,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  padding: 2rem 7%;
+  padding: 5rem 7%;
 }
 .inner-home{
   display: flex;
@@ -712,7 +712,7 @@ cursor: pointer;
   .navbar{
     position: absolute;
     top: 100%;
-    left: -100%;
+    left: -110%;
     width: 100%;
     height: 100vh;
     background: var(--color6);
@@ -732,7 +732,7 @@ cursor: pointer;
   }
   .main-home{
     height: auto;
-    padding-top: 100%;
+    padding-top: 95%;
     }
 
     .home-icons-below{
