@@ -71,13 +71,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
-    padding: 0 1.5rem;
-}
-
+  }
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
   .navbar a{
     padding: 1rem;
@@ -98,9 +96,12 @@
   .header-icons{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end
    
   }
+  .header-icons a {
+    margin-left: 1rem;
+}
   .header-icons i{
     font-size: 2.5rem;
     color: var(--color0);
