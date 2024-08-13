@@ -430,6 +430,8 @@
   display: flex;
   gap: 2rem;
   white-space: nowrap;
+  justify-content: center;
+  width: 100%;
 }
 .service-box{
   flex: 0 1 300px;
