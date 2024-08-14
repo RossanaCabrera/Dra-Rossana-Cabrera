@@ -410,10 +410,8 @@
 }
 /* Our Services */
 .mian-services{
-  padding: 3rem 7%;  
+  padding: 3rem 5%;  
   background-color: var(--color7);
-  position: relative;
-  max-width: 100%;
   box-sizing: border-box;
 }
 .services-heading{
@@ -430,33 +428,34 @@
 }
 .main-inner-services{
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
 }
 .service-box{
   flex: 1 1 calc(20% - 1rem);
   min-width: 200px;
-  padding: 2rem ;
+  padding: 1rem ;
   border: 2px solid var(--color6); 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
   transition: 0.3s ease-in-out;
   box-sizing: border-box;
   background: white;
-  
-  
+  overflow: hidden;
+    
 }
 
-
-
+.service-box h1 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
 .service-box:hover{
-  margin-top: -10px;
-  border-bottom: 2px solid var(--color4);
-  border: 0;
+  transform: translateY(-10px);
+  border-color: var(--color4);
   border-radius: 20px;
   border-left: 5px solid var(--color6);
+  border-left-width: 5px;
 }
 
 .service-box-icon{
