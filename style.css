@@ -413,6 +413,8 @@
   padding: 3rem 7%;  
   background-color: var(--color7);
   position: relative;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .services-heading{
   text-align: center;
@@ -428,20 +430,20 @@
 }
 .main-inner-services{
   display: flex;
-  gap: 2rem;
-  white-space: nowrap;
-  justify-content: center;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 .service-box{
-  flex: 0 1 300px;
-  padding: 2rem 2rem;
+  flex: 1 1 calc(20% - 1rem);
+  min-width: 200px;
+  padding: 2rem ;
   border: 2px solid var(--color6); 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
   transition: 0.3s ease-in-out;
-  position: relative;
-  transition: 0.5s ease;
+  box-sizing: border-box;
   background: white;
   
   
@@ -746,18 +748,54 @@ cursor: pointer;
 
     /* Service section */
 
-    .main-inner-services {
-      flex-direction: column; 
-      align-items: center;  
-      white-space: normal; 
-      gap: 1rem; 
-  }
-
-  .service-box {
-      width: 100%; 
-      max-width: 600px; 
-  }
-}
+    @media (max-width: 1200px) {
+  
+ 
+      .service-box {
+          
+             
+         
+      flex: 1 1 calc(25% - 1rem); /* 4 caixas por linha em telas médias */
+        }
+      }
+      
+      
+        }
+      
+      @media (max-width: 1024px) {
+        .service-box {
+          
+          
+      
+         
+      flex: 1 1 calc(33.33% - 1rem); /* 3 caixas por linha em telas menores */
+        }
+      }
+      
+      
+        
+      
+      
+       
+      @media (max-width: 768px) {
+        .service-box {
+          
+          
+      
+         
+      flex: 1 1 calc(50% - 1rem); /* 2 caixas por linha em telas pequenas */
+        }
+      }
+      
+      
+        
+      @media (max-width: 480px) {
+        .service-box {
+          
+         
+      flex: 1 1 calc(100% - 1rem); /* 1 caixa por linha em telas muito pequenas */
+        }
+      }
 
 
 
@@ -803,7 +841,7 @@ cursor: pointer;
     overflow-wrap: break-word; 
     word-wrap: break-word; 
     text-align: center; 
-
+  }
   .about-right-content p {
     font-size: 2rem; 
     padding: 0.5rem 0; 
@@ -814,5 +852,4 @@ cursor: pointer;
     width: 80px; 
     left: 0; 
   }
-}
 }
